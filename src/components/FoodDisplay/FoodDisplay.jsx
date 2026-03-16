@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import { StoreContext } from '../../context/context'
 import FoodItem from '../FoodItem/FoodItem'
 import ExploreMenu from '../ExploreMenu/ExploreMenu'
-import { food_list } from '../../assets/assets'
+
 
 const FoodDisplay = ({category}) => {
 
@@ -18,7 +18,6 @@ const FoodDisplay = ({category}) => {
 
                 { if(category==="All" || category===item.category ){
                    return <FoodItem key={index} id={item._id} name={item.name} description = {item.description} price={item.price} image={item.image}/> }
-
                 }
             }
             )}
